@@ -1,0 +1,100 @@
+// Git 
+
+what is git ?
+ 
+// git is version control system  il
+
+version control system is a place where we stored the data of our program it called why beacuse if incase our fails then the  files at our local system will be distroyed . So , that we use version control system . second senario in case there is change in the version just like at this time is different version and after some time there is new feature in the next version if the new feature 
+could not like by the user then we cant go back to the previous version without changing our code 
+
+types of version control system 
+
+
+// centerlized control system  : in this system there is  a company server where all the data were store in the form of repositories  ,disadvantages if server fail all data will loss , need of networking , required internet 
+
+                               
+//  distributive control system : this is same as centerlized conrol system but basic change is there is a one more repository in our local system . So,if in case main server is shut down then 
+     there is local store sytem in the each member of the team .
+	
+there are two types of git software 
+
+// Git server (git hub , bitBucket , gitlab, Gitblit) it maintain all the files at server 
+ 
+// Git clicent  
+
+Git Architecture 
+
+//  You have to define a folder where your all the program and files are there  after that you have to run a command git init after successfull run of command there folder has internaly divied into three categories are given below  
+
+// Workinging area  : when you done all the work after you have to these files into your local repositeries by run a command add after running succesfully command then its come to staging area."add"
+// Stage Area       :  when your files in staging area then you sending a message to your repositories that your your work is done . So, you can submit all the files to reposotries ."commit"
+// Local repository : after comming into a local reposotries it will send to our main reposotires ."push" . at the local repostories no other team member can access your files after suceess full
+                      run of command of push command all the files present at local reposotires  it send to our main reposotires where all files can be accessed by our team members.
+
+                    : afer the successfull send to our files to our main repostories , when you want to come back to your files to our local reposotries then you have to run a command "pull".
+                      there is all the record of push and pull, also change ,commit in the main repositories.  
+
+some comands in git  // add all the command in git is case sensetive
+// git --version
+// git help
+// git config
+// git init
+// git clone
+// git add
+// git status
+// git rm
+// git restore
+// git commit
+// git log 
+// git show
+// git push 
+// git pull
+// git branch
+
+//  create a git hub account after that create a reposotries
+
+// for first you have to add email and password
+to add it  
+
+ git config --list  // it use to check your username it has been there or not! . 
+ 
+git config --list --show-origin // this is to know the path of where your configuration is save if you want to delete it then you delete the  cofiguration life of the given path 
+
+git config --golbal user.name "abhisharma22299"
+
+// step to push into repo
+
+go to there working area after that 
+1 git init  : create local repo in your system and also created theree git architecture  
+2 git status : to check the status of the files 
+2 git add .   //  git add (files name with extensions)  to add into stagging area
+3 git rm --cached (files name ) // this is used to unstage the files at present at the stagging area 
+4 git restore (filename) // this is used if any files in stagging area after you change in something in the files then if you want to restore all information present at before the change done .
+5 git commit -m "sutable message " // this is used to staging area to local repo
+6 git branch -M main // switch to main branch 
+7 git remote add origin https://github.com/abhisharma22299/peronalrpo.git
+8 git push -u origin main
+9 git log // to check history 
+// steps to clone of the repo 
+
+ git clone (repo url)
+  git pull 	
+
+// branch is our repo
+
+if there is a team working on a branch then if any person is attemting any new features , if in case it has error for that no error accours in main branch thats why we use another bracnch Master 
+// git branch : to check the branch
+ 
+git brach (new-brach) 
+git checkout name : to swtich over brach 
+
+// if you want to work on diiferent branch then 
+
+1  git add .
+2   git commit -m "sutable message " 
+3   git checkout : switch to main brach  
+4   git merge (dev)  : to meger your current brach to main brach 
+5  git commit -m "new commit"  // this is used to staging area to local repo
+
+
+// git log // to check history 
