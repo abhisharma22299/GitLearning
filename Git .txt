@@ -98,3 +98,5 @@ git checkout name : to swtich over brach
 
 
 // git log // to check history 
+
+//completed
