@@ -60,7 +60,10 @@ to add it
  
 git config --list --show-origin // this is to know the path of where your configuration is save if you want to delete it then you delete the  cofiguration life of the given path 
 
-git config --golbal user.name "abhisharma22299"
+git config --global user.email "abhisheksharmabca2020@gmail.com"
+
+git config --global user.name "AbhiSharma22299"
+
 
 // step to push into repo
 
